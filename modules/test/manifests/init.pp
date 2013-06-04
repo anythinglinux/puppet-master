@@ -27,6 +27,10 @@ class test {
 	# test both. This is just a small introduction into inheritance in puppet.
 
 
+	$hn = $fqdn
+	$ip = $ipaddress_eth0
+	$virtual = $is_virtual
+	$dist = $lsbdistdescription
 	file{"/tmp/info.txt":
 		owner => nobody,
 		group => root,

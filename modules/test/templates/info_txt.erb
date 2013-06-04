@@ -1,5 +1,9 @@
 #info_txt.erb
 #Deployed by puppet
 
-hostname is <%= hn %>
+fqdn is <%= hn %>
 my ip is <%= ip %>
+<% if virtual == "true" %>
+I am a Virtual Machine
+<% end %>
+Linux Distro is <%= dist %>
